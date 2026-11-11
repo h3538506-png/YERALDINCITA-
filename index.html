@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Yeraldincita ❤️</title>
+<style>
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; flex-direction:column; background:linear-gradient(#ffdde1, #fff0f3); font-family:Arial, sans-serif; text-align:center; overflow:hidden; padding:20px; }
+  h1 { font-size:2.3rem; color:#d6336c; line-height:1.2; }
+  p { font-size:1.15rem; color:#333; max-width:400px; }
+  .corazones { font-size:45px; animation: flotar 2s infinite; }
+  @keyframes flotar { 0%{transform:translateY(0)} 50%{transform:translateY(-15px)} 100%{transform:translateY(0)} }
+  .botones { margin-top:10px; position:relative; height:180px; width:100%; max-width:400px; }
+  button { padding:16px 32px; font-size:18px; border:none; border-radius:25px; cursor:pointer; font-weight:bold; }
+  #si { background:#ff4d6d; color:white; box-shadow:0 5px 15px rgba(255,77,109,.4); }
+  #no { background:white; color:#333; position:absolute; left:55%; top:0; }
+  .firma { margin-top:10px; font-style:italic; color:#888; }
+</style>
+</head>
+<body>
+  <div class="corazones">💘 💖 💘</div>
+  <h1>Yeraldincita, ¿quieres regresar conmigo? 🥺❤️</h1>
+  <p>Sé que las cosas no salieron como queríamos, pero de verdad te extraño mucho y quiero intentarlo de nuevo, bien, como nos merecemos.</p>
+  <p>¿Me das otra oportunidad?</p>
+  <div class="botones">
+    <button id="si" onclick="acepto()">SÍ, REGRESEMOS 😍</button>
+    <button id="no" onmouseover="escapar()" onclick="escapar()">No 😢</button>
+  </div>
+  <p class="firma">Con todo mi amor, para ti</p>
+<script>
+  function escapar(){
+    let b = document.getElementById('no');
+    b.style.left = Math.random()*65 + '%';
+    b.style.top = Math.random()*110 + 'px';
+  }
+  function acepto(){
+    document.body.innerHTML = '<div style="text-align:center; padding:20px; font-family:Arial;"><div style="font-size:80px;">💘💖💕</div><h1 style="color:#d6336c; font-size:2.4rem;">¡GRACIAS, YERALDINCITA! ❤️🥹</h1><p style="font-size:1.2rem;">Sabía que lo nuestro no había terminado.<br>Te prometo que esta vez lo haré mejor.<br>Te amo mucho.</p><p style="font-size:50px;">🥹❤️🫶</p></div>';
+  }
+</script>
+</body>
+</html>
